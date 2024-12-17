@@ -1,2 +1,2 @@
 # Jenkins-shared-libraries
-jenkins shared libraries used with code-pipeline
+jenkins shared libraries used with code-pipeline.
