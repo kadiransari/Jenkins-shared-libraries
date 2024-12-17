@@ -25,12 +25,6 @@ pipeline {
                 }
             }
         }
-        stage('deployment the code') {
-            steps {
-                echo 'this is deployment stage'
-                sh "docker-compose up -d"
-            }
-        }
          stage("Push to DockerHub"){
             steps{
                 script{
@@ -38,5 +32,11 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'this is deployment stage'
+                sh "docker-compose up -d"
+            }
+        }        
     }
 }
